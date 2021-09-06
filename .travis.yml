@@ -13,7 +13,7 @@ before_install:
   - gcloud config set project multi-k8s-325007
   - gcloud config set compute/zone us-central1-c
   - gcloud container clusters get-credentials multi-cluster
-
+language: generic
 deploy:
   provider: script
   script: bash ./deploy.sh
